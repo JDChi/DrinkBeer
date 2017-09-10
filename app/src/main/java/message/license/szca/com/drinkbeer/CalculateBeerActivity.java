@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class CalculateBeerActivity extends AppCompatActivity implements View.OnClickListener {
 
     static {
-        System.loadLibrary("calculate-lib");
+        System.loadLibrary("native-lib");
     }
 
     private EditText et_input;
@@ -58,14 +58,11 @@ public class CalculateBeerActivity extends AppCompatActivity implements View.OnC
 
         int i = Integer.valueOf(input);
 
-        tv_result.setText(getBeer(i));
-
-
-
-        // TODO validate success, do something
-
+        int a[] = getBeer(i);
+        tv_result.setText("最后可以喝 " + a[0] + " 瓶酒,剩下 " + a[1] + " 个空酒瓶和剩下 " + a[2] + " 个瓶盖");
 
     }
 
-    public native String getBeer(int money);
+    public native int[] getBeer(int money);
+
 }

@@ -3,6 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="编程题目：啤酒2元一瓶，其中4个啤酒瓶盖可以换一瓶啤酒，2个空啤酒瓶可以换一瓶啤酒，请编程计算，当持有n元现金时，最后可以喝几瓶啤酒？剩余多少钱？剩下几个瓶盖？几个空酒瓶？请用NDK实现所有的计算逻辑，并通过jni的模式，定义好交互数据，用android sdk 实现输入 n 元，输出计算结果的界面
+"/>
+
     <EditText
         android:id="@+id/et_input"
         android:layout_width="match_parent"
