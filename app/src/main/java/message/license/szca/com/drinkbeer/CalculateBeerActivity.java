@@ -11,9 +11,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * Created by edao on 2017/9/8.
+ * description :
+ * author : JDNew
+ * on : 2017/9/10.
  */
-
 public class CalculateBeerActivity extends AppCompatActivity implements View.OnClickListener {
 
     static {
@@ -56,13 +57,13 @@ public class CalculateBeerActivity extends AppCompatActivity implements View.OnC
             return;
         }
 
-        int i = Integer.valueOf(input);
+        int money = Integer.valueOf(input);
 
-        int a[] = getBeer(i);
-        tv_result.setText("最后可以喝 " + a[0] + " 瓶酒,剩下 " + a[1] + " 个空酒瓶和剩下 " + a[2] + " 个瓶盖");
+        int result[] = getCalculateResult(money);
+        tv_result.setText("最后可以喝 " + result[0] + " 瓶酒,剩下 " + result[1] + " 个空酒瓶和剩下 " + result[2] + " 个瓶盖");
 
     }
 
-    public native int[] getBeer(int money);
+    public native int[] getCalculateResult(int money);
 
 }
