@@ -1,4 +1,4 @@
-package message.license.szca.com.drinkbeer;
+package message.license.szca.com.library;
 
 import org.junit.Test;
 

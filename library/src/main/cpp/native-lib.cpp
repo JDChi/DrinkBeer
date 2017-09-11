@@ -7,7 +7,7 @@
  */
 extern "C"
 JNIEXPORT jintArray JNICALL
-Java_message_license_szca_com_drinkbeer_CalculateBeerActivity_getCalculateResult(
+Java_message_license_szca_com_drinkbeer_presenter_CalculateBeerPresenter_getCalculateResult(
         JNIEnv *env,
         jobject /* this */,
         int money) {
