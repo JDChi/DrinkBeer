@@ -35,9 +35,7 @@ public class CalculateBeerPresenter {
             return;
         }
 
-
-        int money = Integer.valueOf(input);
-        int result[] = getCalculateResult(money);
+        int result[] = getCalculateResult(Integer.valueOf(input));
 
 
         mICalculateBeerView.calculateSuccess(result);
